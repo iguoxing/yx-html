@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>怡享科技</title>
+    <link rel="icon" href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/favicon.png" mce_href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/favicon.png" mce_href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/favicon.png" type="image/x-icon">
+    <meta name="description" content="怡享不仅仅有优质贴心的售后服务，还可以在您购买我们产品前提供专业产品知识和相关资讯，随时为您排忧解难。">
+    <meta name="keywords" content="怡享,怡享科技,北京怡享科技发展有限公司,空气净化器">
+
+    <!-- ele 引入样式\组件库 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+    <link rel="stylesheet" href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/css/base/base.css">
+    <link rel="stylesheet" href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/css/base/css.css">
+    <link rel="stylesheet" href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/css/index/aboutUs.css">
+
+</head>
+<body>
+
+<div id="app" class="wait-pay">
+
+    <div class="head">
+        <div class="title flex-row-center">
+            <a href="./index.html"><img src="../../assets/img/index/logo.png"></a>
+            <!--<img src="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/index/head_tree.png">-->
+            <ul class="x-flex">
+                <li><a href="./goods.html">产品</a></li>
+                <li><a href="./service.html">售后服务</a></li>
+                <li><a href="./share.html">共享计划</a></li>
+                <li><a href="./us.html">关于我们</a></li>
+                <li class="user-login"><a href="login.html">用户登录</a></li>
+                <!--<li class="user-cart"><img src="../../assets/img/common/cart_white.png"></li>-->
+                <!--<li class="user-person"><img src="../../assets/img/common/person_white.png"></li>-->
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <div class="heading x-flex">
+                <span class="title">关于我们</span>
+            </div>
+            <img class="divide" src="../../assets/img/index/rule_right.png">
+        </div>
+        <div class="endty x-flex">
+            <div class="l-menu">
+                <el-menu default-active="1" class="el-menu-vertical-demo">
+                    <a href="us.html"><el-menu-item index="1"><i class="el-icon-service"></i>联系我们</el-menu-item></a>
+                    <a href="promise.html"><el-menu-item index="2"><i class="el-icon-document"></i>我们的承诺</el-menu-item></a>
+                </el-menu>
+            </div>
+
+            <div class="r-content">
+                <el-tabs v-model="activeName">
+                    <el-tab-pane label="联系方式" name="first">
+                        <div class="address-info">
+                            联 系 人：张先生<br>
+                            售后电话：18612928996<br>
+                            售后时间：9:00 - 18:00<br>
+                            售后地址：北京市朝阳区慈云寺远洋国际中心6层
+                        </div>
+                    </el-tab-pane>
+                </el-tabs>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="page_bottom flex-row-center">
+        <div class="left_bottom">
+            <div class="tab_title">
+                <a href="./index.html">首页</a> |
+                <a href="./goods.html">产品</a> |
+                <a href="./service.html">售后服务</a> |
+                <a href="./us.html">联系我们</a>
+            </div>
+            <div class="company-info">
+                Copyright © 2017, Yixiangkeji Co., Ltd. All Rights Reserved.北京怡享科技有限公司  |
+                <a>法律声明</a>| <a>隐私条款</a>  |  <a>开发者中心</a>
+                京ICP备14041720号-1    京ICP证140622号    京公网安备11010502025474
+            </div>
+        </div>
+        <div class="right_bottom">
+            <img src="../../assets/img/index/logo_yx.png">
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+
+<!--vue-->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            activeName: 'first',
+            nowTab:'us',
+        }
+    })
+</script>
+</html>

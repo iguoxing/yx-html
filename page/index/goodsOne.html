@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>怡享科技</title>
+    <link rel="icon" href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/favicon.png" mce_href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/favicon.png" mce_href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/favicon.png" type="image/x-icon">
+    <meta name="description" content="怡享不仅仅有优质贴心的售后服务，还可以在您购买我们产品前提供专业产品知识和相关资讯，随时为您排忧解难。">
+    <meta name="keywords" content="怡享,怡享科技,北京怡享科技发展有限公司,空气净化器">
+
+    <!-- ele 引入样式\组件库 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+    <link rel="stylesheet" href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/css/base/base.css">
+    <link rel="stylesheet" href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/css/base/css.css">
+    <link rel="stylesheet" href="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/css/index/goodsOne.css">
+</head>
+<body>
+
+<div id="app" class="goods-one">
+
+    <div class="head">
+        <div class="title flex-row-center">
+            <a href="./index.html"><img src="../../assets/img/index/logo.png"></a>
+            <!--<img src="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/index/head_tree.png">-->
+            <ul class="x-flex">
+                <li><a href="./goods.html">产品</a></li>
+                <li><a href="./service.html">售后服务</a></li>
+                <li><a href="./share.html">共享计划</a></li>
+                <li><a href="./us.html">关于我们</a></li>
+                <li class="user-login"><a href="login.html">用户登录</a></li>
+                <!--<li class="user-cart"><img src="../../assets/img/common/cart_white.png"></li>-->
+                <!--<li class="user-person"><img src="../../assets/img/common/person_white.png"></li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="main flex-row-center">
+        <div class="left-show">
+            <img class="img" src="../../assets/img/goods/pro2.png">
+            <p class="title">新风第二代空气净化器  502m2/h 工业级空气净化器</p>
+            <!--<p class="info"><a href="goodsInfo.html">产品详情></a></p>-->
+        </div>
+        <div class="goods-info">
+            <div class="orgin-prise info">
+                <label class="title">原价格</label>
+                <div class="num"><span class="sign">¥</span> 6999.00</div>
+            </div>
+            <div class="share-prise info">
+                <label class="title">共享价</label>
+                <div class="num">
+                    <span class="sign">¥</span> 2200.00<span class="des">（含押金1000）</span>
+                </div>
+            </div>
+            <div class="goods-intro info">
+                <label class="title">详情</label>
+                <a class="des" href="share.html">了解共享></a>
+            </div>
+            <div class="goods-num info">
+                <label class="title">数量</label>
+                <el-input-number v-model="num1" :min="1" :max="100" label="数量"></el-input-number>
+            </div>
+            <div class="promise info">
+                <label class="title">承诺</label>
+                <div class="des">押金随时退；<br>使用期内非人为问题免费维修；</div>
+            </div>
+            <div class="btn-buy info">
+                <label class="title"></label>
+                <div class="ready-buy">
+                    <a class="cart" href="cart.html">加入购物车</a>
+                    <a class="buy" href="check.html">购买</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="buy">
+            <img src="../../assets/img/goods/p_1.jpg">
+            <!--<a @click.stop="routerLink('check')" class="buy-now"  style="text-decoration: none;">立即购买</a>-->
+        </div>
+        <img src="../../assets/img/goods/p_2.jpg">
+        <img src="../../assets/img/goods/p_3.jpg">
+        <img src="../../assets/img/goods/p_4.jpg">
+        <img src="../../assets/img/goods/p_5.jpg">
+        <img src="../../assets/img/goods/p_6.jpg">
+    </div>
+
+    <div class="page_bottom flex-row-center">
+        <div class="left_bottom">
+            <div class="tab_title">
+                <a href="./index.html">首页</a> |
+                <a href="./goods.html">产品</a> |
+                <a href="./service.html">售后服务</a> |
+                <a href="./us.html">联系我们</a>
+            </div>
+            <div class="company-info">
+                Copyright © 2017, Yixiangkeji Co., Ltd. All Rights Reserved.北京怡享科技有限公司  |
+                <a>法律声明</a>| <a>隐私条款</a>  |  <a>开发者中心</a>
+                京ICP备14041720号-1    京ICP证140622号    京公网安备11010502025474
+            </div>
+        </div>
+        <div class="right_bottom">
+            <img src="../../assets/img/index/logo_yx.png">
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+
+<!--vue-->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            num1: 1
+        },
+        handleChange:function (value) {
+            console.log(value);
+        }
+    })
+
+</script>
+</html>
